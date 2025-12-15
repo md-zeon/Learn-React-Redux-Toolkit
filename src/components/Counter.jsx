@@ -10,6 +10,7 @@ import {
 	selectUserEmail,
 	selectUserName,
 } from "../store/selectors";
+import Login from "./Login";
 
 const Counter = () => {
 	// const count = useSelector((state) => state.counter.value);
@@ -33,6 +34,7 @@ const Counter = () => {
 			<button onClick={() => dispatch(incrementByAmount(5))}>
 				Increment by 5
 			</button>
+			<Login />
 		</div>
 	);
 };
